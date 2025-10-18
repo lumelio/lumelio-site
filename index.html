@@ -6,6 +6,7 @@
   <title>Lumelio — AI-Assisted MEL Tools to Do More with Less</title>
   <meta name="description" content="Turn hours of MEL reporting into minutes of insight. Trust-first, AI-assisted tools for NGOs and impact teams under pressure to deliver." />
   <meta name="theme-color" content="#5536d2" />
+  <link rel="icon" href="e0aa2dfc-9f00-4507-9223-5f2345cd6119.png" type="image/png" />
   <style>
     :root {
       --bg:#f7f7fb; --text:#0f172a; --subtext:#475569; --brand:#5536d2; --brand-2:#7b5cff; --ring:#e5e7eb;
@@ -36,14 +37,18 @@
       filter:blur(40px);
       pointer-events:none;
     }
+
+    /* BRAND AREA */
     .brand{display:flex;align-items:center;gap:10px}
     .brandmark{
-      width:40px;height:40px;
-      background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      width:44px;
+      height:44px;
       border-radius:12px;
-      box-shadow:0 6px 20px rgba(85,54,210,.35);
+      object-fit:contain;
+      box-shadow:0 6px 20px rgba(85,54,210,0.25);
     }
     .brandname{font-weight:800;letter-spacing:.2px}
+
     h1{font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.15;margin:18px 0 8px}
     .lead{color:var(--subtext);font-size:clamp(1rem,1.8vw,1.125rem);max-width:58ch}
 
@@ -77,6 +82,7 @@
     .benefit{display:flex;gap:10px;align-items:flex-start;margin:8px 0;color:#334155}
     .ico{width:22px}
 
+    /* FORM */
     .form{margin-top:6px}
     .form label{display:block;font-size:.9rem;font-weight:600;margin:10px 0 6px}
     .form input[type=email]{
@@ -141,14 +147,19 @@
 
     @media (max-width:820px){.trust{grid-template-columns:1fr}}
     @media (prefers-reduced-motion:reduce){.btn,.glow{transition:none;animation:none}}
+    @media (max-width:640px){
+      .brandmark{width:36px;height:36px}
+    }
   </style>
 </head>
 <body>
   <div class="shell">
     <section class="hero" role="banner">
       <div class="glow" aria-hidden="true"></div>
+
+      <!-- Updated Logo -->
       <div class="brand" aria-label="Lumelio">
-        <div class="brandmark" aria-hidden="true"></div>
+        <img src="/e0aa2dfc-9f00-4507-9223-5f2345cd6119.png" alt="Lumelio logo" class="brandmark" />
         <div class="brandname">Lumelio</div>
       </div>
 
